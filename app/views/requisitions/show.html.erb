@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @requisition.name %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @requisition.number %>
+</p>
+
+<p>
+  <b>Service:</b>
+  <%= @requisition.service %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @requisition.user_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @requisition.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_requisition_path(@requisition) %> |
+<%= link_to 'Back', requisitions_path %>
