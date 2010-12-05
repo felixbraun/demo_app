@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
+    # Aufruf des User Model
     @users = User.all
 
     respond_to do |format|
